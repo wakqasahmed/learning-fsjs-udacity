@@ -6,7 +6,7 @@ const concatArr = (arr1: (number[] | string[]), arr2: (number[] | string[])) => 
 
 // Add numbers in an array
 
-const addArr = (arr: number[]) => {
+const addArr = (arr: number[]):number => {
   let total = 0;
   arr.forEach((x) => {
     total += x;
@@ -15,23 +15,23 @@ const addArr = (arr: number[]) => {
 };
 
 // Find the largest number in an array
-const lgNum = (arr:number[]) => {
-  let largest = 0;
+const lgNum = (arr:(number|string)[]):number => {
+  let largest = 0 as number;
   arr.forEach((x) => {
     if (x > largest) {
-      largest = x;
+      largest = x as number;
     }
   });
   return largest;
 };
 
 // Remove the 3rd item from an array
-const cut3 = (arr: number[] | string[]) => {
+const cut3 = (arr: (number| string)[]) => {
   arr.splice(2, 1);
   return arr;
 };
 
-module.exports = {
+export default {
   concatArr,
   addArr,
   lgNum,

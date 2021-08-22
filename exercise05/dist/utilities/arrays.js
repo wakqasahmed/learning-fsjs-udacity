@@ -7,6 +7,7 @@ var __spreadArrays = (this && this.__spreadArrays) || function () {
             r[k] = a[j];
     return r;
 };
+Object.defineProperty(exports, "__esModule", { value: true });
 var concatArr = function (arr1, arr2) {
     return __spreadArrays(arr1, arr2);
 };
@@ -33,7 +34,7 @@ var cut3 = function (arr) {
     arr.splice(2, 1);
     return arr;
 };
-module.exports = {
+exports.default = {
     concatArr: concatArr,
     addArr: addArr,
     lgNum: lgNum,
